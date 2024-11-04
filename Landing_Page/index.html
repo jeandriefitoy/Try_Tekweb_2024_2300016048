@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="img/Logo_Remindme.svg"
+            type="image/x-icon"
+        />
+        <!-- Font Awesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Font Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="/src/output.css" />
+        <title>Landing Page</title>
+    </head>
+    <body class="bg-white" id="home">
+        <!-- Navbar -->
+        <div class="navbar h-[99px] flex items-center">
+            <div class="container mx-auto">
+                <div class="navbar_box flex items-center justify-between">
+                    <div
+                        class="logo_menu flex items-center lg:justify-center md:justify-start gap-20 xl:w-1/2 lg:w-2/3 md:w-1/2 w-1/2"
+                    >
+                        <img
+                            class="md:ml-7 sm:ml-7 ml-7"
+                            src="img/Logo.svg"
+                            alt="Logo"
+                        />
+                        <ul
+                            class="menu gap-x-14 flex lg:static md:absolute absolute items-center z-10 top-24 left-0 lg:flex-row flex-col lg:w-auto w-full lg:bg-transparent bg-secondary"
+                        >
+                            <li class="py-4 w-14 text-center">
+                                <a
+                                    href="#home"
+                                    class="hover:text-primary hover:font-bold transition-all"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="py-4 w-20 text-center">
+                                <a
+                                    href="#features"
+                                    class="hover:text-primary hover:font-bold transition-all"
+                                    >Features</a
+                                >
+                            </li>
+                            <li class="py-4 w-20 text-center">
+                                <a
+                                    href="#aboutus"
+                                    class="hover:text-primary hover:font-bold transition-all"
+                                    >About us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="aboutapp_humberger flex items-center justify-end xl:w-1/2 lg:w-1/3 md:w-1/2 w-1/2"
+                    >
+                        <a href="#aboutapp">
+                            <button
+                                class="aboutapp 2xl:block 2xl:mr-28 xl:block xl:mr-14 lg:block lg:mr-16 md:hidden hidden px-9 py-3 outline outline-2 outline-primary rounded-3xl text-primary hover:bg-primary hover:text-white transition-all"
+                            >
+                                About App
+                            </button>
+                        </a>
+                        <button
+                            class="humberger border-2 border-primary lg:hidden md:block md:mr-7 sm:block sm:mr-7 mr-7 p-1 rounded-sm opacity-70 hover:opacity-100 transition-opacity before:opacity-70 after:opacity-100"
+                        >
+                            <img
+                                class=""
+                                src="img/Hamburger.svg"
+                                alt="Humberger"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <!-- Hero -->
+        <div class="hero min-h-fit flex items-start">
+            <div class="container mx-auto">
+                <div
+                    class="hero_box flex items-center pb-16 lg:flex-row flex-col"
+                >
+                    <div
+                        class="hero_box1 flex flex-col justify-center items-start lg:w-1/2 h-[740px] lg:px-28 space-y-10 lg:order-1 order-1 sm:px-7 px-7"
+                    >
+                        <h1
+                            class="xl:text-7xl font-semibold xl:leading-tight lg:text-6xl lg:leading-tight sm:text-6xl sm:leading-tight text-6xl leading-tight"
+                        >
+                            Manage Schedule and Task Easy
+                        </h1>
+                        <p class="text-lg opacity-60 leading-loose">
+                            Create and organize schedule and task deadline
+                            become better, easy manage and certainly no longer
+                            lagging behind schedule of activities and task
+                        </p>
+                        <a href="#downloadapp">
+                            <button
+                                class="px-10 py-4 text-lg text-white outline outline-2 outline-primary rounded-full bg-primary hover:bg-secondary hover:text-primary transition-all"
+                            >
+                                Download App
+                            </button>
+                        </a>
+                    </div>
+                    <div
+                        class="hero_box2 flex lg:w-1/2 lg:h-[740px] lg:order-2 order-2 md:h-[700px] md:w-full h-[680px] w-full"
+                    >
+                        <img
+                            class="object-cover object-center w-full h-full lg:rounded-bl-[100px]"
+                            src="img/Hero_Image.svg"
+                            alt="Hero image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero -->
+        <!-- Features -->
+        <div class="features min-h-fit flex items-start" id="features">
+            <div class="container mx-auto">
+                <div
+                    class="features_box flex items-center justify-center py-16 lg:px-28 px-7 gap-7 lg:flex-row flex-col bg-white"
+                >
+                    <div
+                        class="features_box1 flex flex-col lg:w-1/3 w-full lg:order-1 order-1 lg:text-start lg:items-start md:text-center md:items-center sm:text-center sm:items-center text-center items-center"
+                    >
+                        <img
+                            class="w-20 h-20 p-4 bg-secondary rounded-full"
+                            src="img/Feature1.svg"
+                            alt="feature1"
+                        />
+                        <h3
+                            class="text-2xl font-bold 2xl:pt-12 2xl:pb-8 xl:pt-16 xl:pb-11 pt-12 pb-8"
+                        >
+                            Set a better deadline tasks
+                        </h3>
+                        <p class="text-lg opacity-60 leading-loose">
+                            You can make your duty deadlines better and more
+                            orderly
+                        </p>
+                    </div>
+                    <div
+                        class="features_box2 flex flex-col lg:w-1/3 w-full lg:order-2 order-2 lg:text-start lg:items-start md:text-center md:items-center sm:text-center sm:items-center text-center items-center"
+                    >
+                        <img
+                            class="w-20 h-20 p-4 bg-secondary rounded-full"
+                            src="img/Feature2.svg"
+                            alt="feature2"
+                        />
+                        <h3 class="text-2xl font-bold pt-12 pb-8">
+                            Manage the tasks so easily
+                        </h3>
+                        <p class="text-lg opacity-60 leading-loose">
+                            You can manage the deadlines and the schedule
+                            becomes easy
+                        </p>
+                    </div>
+                    <div
+                        class="features_box3 flex flex-col lg:w-1/3 w-full lg:order-3 order-3 lg:text-start lg:items-start md:text-center md:items-center sm:text-center sm:items-center text-center items-center"
+                    >
+                        <img
+                            class="w-20 h-20 p-4 bg-secondary rounded-full"
+                            src="img/Feature3.svg"
+                            alt="feature3"
+                        />
+                        <h3 class="text-2xl font-bold pt-12 pb-8">
+                            Wouldn’t miss notifications
+                        </h3>
+                        <p class="text-lg opacity-60 leading-loose">
+                            Of course you will always get the tasks and schedule
+                            notifications
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features -->
+        <!-- Advantage1 -->
+        <div class="advantage1 min-h-fit flex items-start" id="aboutapp">
+            <div class="container mx-auto">
+                <div
+                    class="advantage1_box flex items-center lg:py-16 md:py-7 lg:flex-row flex-col"
+                >
+                    <div
+                        class="advantage1_box1 flex lg:w-1/2 lg:h-[620px] lg:order-1 order-1 md:h-[580px] md:w-full h-[560px] w-full"
+                    >
+                        <img
+                            class="object-cover object-center w-full h-full lg:rounded-r-[100px] md:rounded-none sm:rounded-none rounded-none"
+                            src="img/Advantage1.svg"
+                            alt="advantage1"
+                        />
+                    </div>
+                    <div
+                        class="advantage1_box2 flex flex-col justify-center items-start lg:w-1/2 lg:h-[620px] md:h-[580px] h-[560px] lg:px-28 space-y-10 lg:order-2 order-2 sm:px-7 px-7"
+                    >
+                        <h2
+                            class="font-bold text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-[1.42rem] lg:leading-loose md:leading-loose sm:leading-normal leading-relaxed"
+                        >
+                            Set up task and schedule with a best features
+                        </h2>
+                        <p class="text-lg opacity-60 leading-loose">
+                            The best feature makes you better, with the latest
+                            technology to meet your needs. Of course, with such
+                            features as organizing schedules and leading
+                            assignments, it will make you easier, So get the
+                            application now !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Advantage1 -->
+        <!-- Advantage2 -->
+        <div class="advantage2 min-h-fit flex items-start">
+            <div class="container mx-auto">
+                <div
+                    class="advantage2_box flex items-center lg:py-16 md:py-7 lg:flex-row flex-col"
+                >
+                    <div
+                        class="advantage2_box1 flex flex-col justify-center items-start lg:w-1/2 lg:h-[620px] md:h-[580px] h-[560px] lg:px-28 space-y-10 lg:order-1 order-2 sm:px-7 px-7"
+                    >
+                        <h2
+                            class="font-bold text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-[1.42rem] lg:leading-loose md:leading-loose sm:leading-normal leading-relaxed"
+                        >
+                            Get the highest priority application notification
+                        </h2>
+                        <p class="text-lg opacity-60 leading-loose">
+                            The best feature makes you better, with the latest
+                            technology to meet your needs. Of course, with such
+                            features as organizing schedules and leading
+                            assignments, it will make you easier, So get the
+                            application now !
+                        </p>
+                    </div>
+                    <div
+                        class="advantage2_box2 flex lg:w-1/2 lg:h-[620px] lg:order-2 order-1 md:h-[580px] md:w-full h-[560px] w-full"
+                    >
+                        <img
+                            class="object-cover object-center w-full h-full lg:rounded-l-[100px] md:rounded-none sm:rounded-none rounded-none"
+                            src="img/Advantage2.svg"
+                            alt="advantage1"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Advantage2 -->
+        <!-- User Paging -->
+        <div class="user_paging min-h-fit flex items-start" id="downloadapp">
+            <div class="container mx-auto">
+                <div
+                    class="user_paging_box flex flex-col items-center justify-center md:mx-24 md:my-20 md:py-24 md:px-28 md:gap-y-24 sm:px-3 sm:py-5 sm:mx-5 sm:my-16 sm:gap-y-10 px-3 py-5 mx-5 my-16 gap-y-10 bg-no-repeat bg-cover bg-center md:bg-up-dekstop sm:bg-up-mobile bg-up-mobile md:rounded-[100px] sm:rounded-3xl rounded-3xl"
+                >
+                    <div class="user_paging_box1 w-2/3 flex items-center">
+                        <h2
+                            class="text-secondary text-center font-bold leading-loose md:text-4xl sm:text-2xl text-xl"
+                        >
+                            Download an app now and the various benefits you
+                            will get immediately
+                        </h2>
+                    </div>
+                    <div
+                        class="user_paging_box2 flex gap-12 md:flex-row sm:flex-col flex-col"
+                    >
+                        <button
+                            class="px-10 py-4 text-lg text-primary outline outline-2 outline-white rounded-full bg-secondary hover:bg-primary hover:text-white transition-all"
+                        >
+                            Download App
+                        </button>
+                        <a href="#aboutapp">
+                            <button
+                                class="px-14 py-4 text-lg text-white outline outline-2 outline-white rounded-full bg-transparent hover:bg-secondary hover:outline-primary hover:text-primary transition-all"
+                            >
+                                About App
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- User Paging -->
+        <!-- Testimonial -->
+        <div class="testimonial min-h-fit flex items-start" id="aboutus">
+            <div class="container mx-auto">
+                <div class="testimonial_box flex items-center lg:py-16 md:py-7">
+                    <div
+                        class="testimoni_box1 lg:flex lg:w-1/2 lg:h-[620px] lg:order-1 order-1 md:hidden hidden"
+                    >
+                        <img
+                            class="object-cover object-center w-full h-full lg:rounded-r-[100px] md:rounded-none sm:rounded-none rounded-none"
+                            src="img/Testimonial.svg"
+                            alt="testi"
+                        />
+                    </div>
+                    <div
+                        class="testimoni_box2 flex flex-col justify-center items-start lg:w-1/2 lg:h-[620px] md:h-[580px] h-[560px] lg:px-28 space-y-10 lg:order-2 order-2 sm:px-7 px-7"
+                    >
+                        <h2
+                            class="font-bold text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-[1.42rem] lg:leading-loose md:leading-loose sm:leading-normal leading-relaxed"
+                        >
+                            What do they think
+                        </h2>
+                        <img src="img/Test_Profile.svg" alt="samantha" />
+                        <p class="text-lg leading-loose">
+                            “ Hi, it’s Samantha. After using it made me a lot of
+                            benefits, starting with convenience of setting a
+                            deadline of tasks and schedule after that the app is
+                            very simple using. “
+                        </p>
+                        <img src="img/Test_Slider.svg" alt="slidertest" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial -->
+        <!-- Footer -->
+        <div class="footer min-h-fit flex items-start">
+            <div class="container mx-auto">
+                <div
+                    class="footer_box flex items-start justify-center mb-16 py-16 lg:px-28 px-7 gap-[3.7rem] lg:flex-row flex-col"
+                >
+                    <div
+                        class="footer_box1 flex flex-col lg:w-1/3 w-full lg:order-1 order-1 text-start items-start"
+                    >
+                        <img
+                            class="lg:size-10/12 pt-12 pb-8 md:size-3/6 size-8/12"
+                            src="img/Logo.svg"
+                            alt="logofooter"
+                        />
+                        <p class="text-lg opacity-60 leading-loose">
+                            Task deadlines and scheduling applications with
+                            various benefits and advantages
+                        </p>
+                    </div>
+                    <div
+                        class="footer_box2 flex justify-between lg:w-1/3 w-full lg:order-2 order-2 text-start items-start"
+                    >
+                        <div class="sitemaps_list">
+                            <h3 class="text-2xl font-semibold pt-20 pb-12">
+                                Sitemaps
+                            </h3>
+                            <ul class="list-inside list-disc">
+                                <li class="text-primary">
+                                    <span
+                                        class="text-black text-lg cursor-pointer opacity-60 leading-loose"
+                                        >Home</span
+                                    >
+                                </li>
+                                <li class="text-primary">
+                                    <span
+                                        class="text-black text-lg cursor-pointer opacity-60 leading-loose"
+                                        >Features</span
+                                    >
+                                </li>
+                                <li class="text-primary">
+                                    <span
+                                        class="text-black text-lg cursor-pointer opacity-60 leading-loose"
+                                        >About Us</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="advantages_list">
+                            <h3 class="text-2xl font-semibold pt-20 pb-12">
+                                Advantages
+                            </h3>
+                            <ul class="list-inside list list-disc">
+                                <li class="text-primary">
+                                    <span
+                                        class="text-black text-lg cursor-pointer opacity-60 leading-loose"
+                                        >Set Task Better</span
+                                    >
+                                </li>
+                                <li class="text-primary">
+                                    <span
+                                        class="text-black text-lg cursor-pointer opacity-60 leading-loose"
+                                        >Easy Manage</span
+                                    >
+                                </li>
+                                <li class="text-primary">
+                                    <span
+                                        class="text-black text-lg cursor-pointer opacity-60 leading-loose"
+                                        >Get Notification</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="footer_box3 flex flex-col lg:w-1/3 w-full lg:order-3 order-3 text-start items-start"
+                    >
+                        <h3 class="text-2xl font-semibold pt-20 pb-12">
+                            Follow Us
+                        </h3>
+                        <div class="image_footer flex gap-10">
+                            <img
+                                class="cursor-pointer"
+                                src="img/fb.svg"
+                                alt="facebook"
+                            />
+                            <img
+                                class="cursor-pointer"
+                                src="img/twt.svg"
+                                alt="twitter"
+                            />
+                            <img
+                                class="cursor-pointer"
+                                src="img/lkd.svg"
+                                alt="linkedin"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- Button Back To Top -->
+        <a href="#home">
+            <i
+                class="fa-solid fa-circle-arrow-up fixed bottom-10 right-10 text-5xl text-primary cursor-pointer z-20 opacity-80 hover:opacity-100 transition-all hidden"
+                title="Back To Top"
+            ></i>
+        </a>
+        <!-- Button Back To Top -->
+        <!-- JS -->
+        <script src="script.js"></script>
+        <!-- JS -->
+    </body>
+</html>
